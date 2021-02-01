@@ -20,7 +20,7 @@ class IBANServiceImpl implements IBANService{
 
         String modifiedIBAN = removeSpacesAndMoveIBANCharacters(ibanNumber);
 
-        if (ibanNumber.length() < 15 || ibanNumber.length() > 34) {
+        if (ibanNumber.length() != 20) {
             return false;
         }
 
